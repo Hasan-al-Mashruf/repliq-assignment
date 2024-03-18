@@ -7,7 +7,7 @@ export default {
     colors: {
       transparent: "transparent",
       white: "#ffffff",
-      dark: "#000000",
+      black: "#000000",
       // custom colors.....
       orange: {
         400: "#fc8755",
