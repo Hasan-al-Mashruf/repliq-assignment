@@ -10,7 +10,7 @@ interface SigninProps {
   setActiveTabIndex: any;
 }
 
-const Signin: React.FC<SigninProps> = ({
+const SignUp: React.FC<SigninProps> = ({
   handleSubmit,
   onSubmit,
   register,
@@ -69,10 +69,10 @@ const Signin: React.FC<SigninProps> = ({
           <input type="submit" className="btn btn-primary" />
         </div>
 
-        <div className="form-field" onClick={() => setActiveTabIndex(0)}>
+        <div className="form-field" onClick={() => setActiveTabIndex(1)}>
           <div className="form-control justify-center">
             <a className="link link-underline-hover link-primary text-sm">
-              Don't have an account? Sign up.
+              If you already have ana ccount? Sign in.
             </a>
           </div>
         </div>
@@ -81,4 +81,4 @@ const Signin: React.FC<SigninProps> = ({
   );
 };
 
-export default Signin;
+export default SignUp;
