@@ -1,0 +1,120 @@
+[
+  {
+    "id": "1",
+    "name": "Nike Blazer Mid '77",
+    "brand": "Nike",
+    "price": 999.99,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3bdcf8a1-b301-4444-8dfd-92601bbf42ac/blazer-mid-77-womens-shoes-NPWfjm.png",
+    "quantity": 50,
+    "description": "Dell Inspiron 15.6-inch laptop with Intel Core i5 processor, 8GB RAM, and 512GB SSD.",
+    "features": ["Vintage design", "Leather upper", "Rubber outsole"],
+    "reviews": [
+      {
+        "user": "John Doe",
+        "rating": 4,
+        "comment": "Love the retro style!"
+      },
+      {
+        "user": "Jane Smith",
+        "rating": 5,
+        "comment": "Very comfortable!"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Nike Blazer Mid Pro Club",
+    "brand": "Nike",
+    "price": 799.0,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5b5612dd-bd17-448b-9e3c-34f0c0404c50/blazer-mid-pro-club-mens-shoes-3mzkQN.png",
+    "quantity": 100,
+    "description": "Apple iPhone 12 with 6.1-inch Super Retina XDR display, A14 Bionic chip, and dual-camera system.",
+    "features": ["Classic design", "Suede upper", "Foam midsole"],
+    "reviews": [
+      {
+        "user": "Alice Johnson",
+        "rating": 5,
+        "comment": "Great fit!"
+      },
+      {
+        "user": "Bob Williams",
+        "rating": 4,
+        "comment": "Nice color options."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Nike SB Zoom Blazer Mid Premium",
+    "brand": "Nike",
+    "price": 199.99,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/00d2874c-d7f1-476c-af5e-eb8230370c21/blazer-mid-77-big-kids-shoes-91hTDJ.png",
+    "quantity": 75,
+    "description": "Sony WH-1000XM4 wireless noise-canceling headphones with industry-leading noise cancellation and Alexa voice control.",
+    "features": [
+      "Premium suede upper",
+      "Zoom Air cushioning",
+      "Rubber outsole"
+    ],
+    "reviews": [
+      {
+        "user": "Emily Brown",
+        "rating": 5,
+        "comment": "Excellent sound quality!"
+      },
+      {
+        "user": "Michael Clark",
+        "rating": 4,
+        "comment": "Very comfortable for long use."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Nike Blazer Low '77",
+    "brand": "Nike",
+    "price": 299.5,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7bef7ebd-6033-4639-9781-5d1d15458cf7/sb-zoom-blazer-mid-premium-skate-shoes-rp2VHt.png",
+    "quantity": 60,
+    "description": "Samsung Galaxy Watch 4 Classic with 42mm case, Bluetooth connectivity, and advanced health monitoring features.",
+    "features": [
+      "Leather and textile upper",
+      "Autonomy up to 7 days",
+      "Water-resistant design"
+    ],
+    "reviews": [
+      {
+        "user": "David Wilson",
+        "rating": 4,
+        "comment": "Great battery life!"
+      },
+      {
+        "user": "Sarah White",
+        "rating": 5,
+        "comment": "Looks stylish and functional."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Nike Blazer Mid '77 EMB",
+    "brand": "Nike",
+    "price": 899.95,
+    "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b476ef01-cb01-4aca-8c6e-a0bf82c61755/blazer-mid-77-emb-mens-shoe-1CXjLJ.png",
+    "quantity": 40,
+    "description": "Canon EOS Rebel T7 DSLR camera with EF-S 18-55mm IS II lens kit and 24.1 Megapixel CMOS sensor.",
+    "features": ["Embroidered design", "Canvas upper", "Cushioned insole"],
+    "reviews": [
+      {
+        "user": "Linda Garcia",
+        "rating": 5,
+        "comment": "Amazing picture quality!"
+      },
+      {
+        "user": "James Martinez",
+        "rating": 4,
+        "comment": "Easy to use and versatile."
+      }
+    ]
+  }
+]
