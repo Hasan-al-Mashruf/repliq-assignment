@@ -18,3 +18,9 @@ export interface ProductType {
     comment: string;
   }[];
 }
+
+export interface ICustomer {
+  id: number;
+  phone_number: string;
+  password: string;
+}
