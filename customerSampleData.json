@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "phone_number": "01784423398",
+    "password": "123456"
+  },
+  {
+    "id": 2,
+    "phone_number": "01842351008",
+    "password": "SecurePass123"
+  },
+  {
+    "id": 3,
+    "phone_number": "01942351558",
+    "password": "MySecret123"
+  },
+  {
+    "id": 4,
+    "phone_number": "01542351558",
+    "password": "Passw0rd!"
+  },
+  {
+    "id": 5,
+    "phone_number": "01642351558",
+    "password": "StrongP@ss"
+  }
+]
