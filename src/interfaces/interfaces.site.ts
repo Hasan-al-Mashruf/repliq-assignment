@@ -6,13 +6,13 @@ export interface Iinputs {
 export interface ProductType {
   brand: string;
   description: string;
-  features: string[];
   id: string;
   image: string;
   name: string;
   price: number;
   quantity: number;
-  reviews: {
+  features?: string[];
+  reviews?: {
     user: string;
     rating: number;
     comment: string;

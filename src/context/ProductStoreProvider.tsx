@@ -4,11 +4,14 @@ import { ICustomer, ProductType } from "../interfaces/interfaces.site";
 
 export type ProductStoreContextType = {
   loader: boolean;
-  sampleProductData: ProductType[] | null;
+  sampleProductData: ProductType[] | [];
   cart: ProductType[] | null;
   setCart: React.Dispatch<React.SetStateAction<ProductType[] | []>>;
   customerList: ICustomer[] | [];
   setCustomerList: React.Dispatch<React.SetStateAction<ICustomer[] | []>>;
+  setSampleProductData: React.Dispatch<
+    React.SetStateAction<ProductType[] | []>
+  >;
 };
 
 export const ProductStoreContext =
@@ -19,8 +22,8 @@ const ProductStoreProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   const [loader, setLoader] = useState(false);
   const [sampleProductData, setSampleProductData] = useState<
-    ProductType[] | null
-  >(null);
+    ProductType[] | []
+  >([]);
   const [cart, setCart] = useState<ProductType[] | []>([]);
   const [customerList, setCustomerList] = useState<ICustomer[] | []>([]);
 
@@ -66,7 +69,8 @@ const ProductStoreProvider: React.FC<{ children: React.ReactNode }> = ({
         cart,
         setCart,
         customerList,
-        setCustomerList, // Provide setter function in context value
+        setCustomerList,
+        setSampleProductData,
       }}
     >
       {children}
