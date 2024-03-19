@@ -5,6 +5,8 @@ import { ProductType } from "../interfaces/interfaces.site";
 export type ProductStoreContextType = {
   loader: boolean;
   sampleProductData: ProductType[] | null;
+  cart: ProductType[] | null;
+  setCart: React.Dispatch<React.SetStateAction<ProductType[] | []>>;
 };
 
 export const ProductStoreContext =
@@ -17,7 +19,7 @@ const ProductStoreProvider: React.FC<{ children: React.ReactNode }> = ({
   const [sampleProductData, setSampleProductData] = useState<
     ProductType[] | null
   >(null);
-
+  const [cart, setCart] = useState<ProductType[] | []>([]);
   const api = process.env.REACT_APP_API_URL;
   useEffect(() => {
     const fetchData = async () => {
@@ -41,6 +43,8 @@ const ProductStoreProvider: React.FC<{ children: React.ReactNode }> = ({
       value={{
         loader,
         sampleProductData,
+        cart,
+        setCart,
       }}
     >
       {children}

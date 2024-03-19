@@ -1,12 +1,19 @@
 import { useParams } from "react-router-dom";
-import productJsonData from "../../assets/sampleData.json";
 import { checkMarkImg } from "../../assets";
+import {
+  ProductStoreContext,
+  ProductStoreContextType,
+} from "../../context/ProductStoreProvider";
+import { useContext } from "react";
 
 const ProductDetails = () => {
+  const { sampleProductData } = useContext(
+    ProductStoreContext
+  ) as ProductStoreContextType;
   const { id } = useParams();
 
   // Find the product with the matching ID
-  const product = productJsonData.find((product) => product.id == id);
+  const product = sampleProductData?.find((product) => product.id == id);
 
   if (!product) {
     return <div>Product not found</div>;
