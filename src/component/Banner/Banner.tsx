@@ -1,7 +1,7 @@
 import "./Banner.css";
 const Banner = () => {
   return (
-    <section className="banner flex items-center justify-center relative z-0 mt-[-114px]">
+    <section className="banner flex items-center justify-center relative z-0 mt-[-114px] h-screen">
       <div className="container text-center ">
         <div className="w-1/2 mx-auto">
           <h2 className="text-5xl text-orange-600 font-title font-semibold">

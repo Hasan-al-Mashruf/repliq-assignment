@@ -12,6 +12,9 @@ const ProductCard: React.FC<{ product: ProductType }> = ({ product }) => {
   ) as ProductStoreContextType;
   const { id, image, name, price } = product;
 
+  // Check if the product is already in the cart
+  const isInCart = cart?.some((item) => item.id === id);
+
   const addToCart = (product: ProductType) => {
     setCart((prevCart) => [...prevCart, product]);
   };
@@ -45,9 +48,12 @@ const ProductCard: React.FC<{ product: ProductType }> = ({ product }) => {
             </Link>
             <button
               onClick={() => addToCart(product)}
-              className="btn btn-outline-primary border-orange-600 text-orange-600 bg-orange-600 text-white font-body px-8 hover:bg-transparent hover:text-orange-600 "
+              disabled={isInCart}
+              className={`btn btn-outline-primary border-orange-600 text-orange-600 bg-orange-600 text-white font-body px-8 hover:bg-transparent hover:text-orange-600 ${
+                isInCart ? "cursor-not-allowed opacity-50" : ""
+              }`}
             >
-              Add to cart
+              {isInCart ? "Added to Cart" : "Add to Cart"}
             </button>
           </div>
         </div>
