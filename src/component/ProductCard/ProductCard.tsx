@@ -5,6 +5,8 @@ import {
   ProductStoreContextType,
 } from "../../context/ProductStoreProvider";
 import { ProductType } from "../../interfaces/interfaces.site";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ProductCard: React.FC<{ product: ProductType }> = ({ product }) => {
   const { cart, setCart } = useContext(
@@ -23,11 +25,11 @@ const ProductCard: React.FC<{ product: ProductType }> = ({ product }) => {
   return (
     <div>
       <div className="card card-image-cover max-w-full">
-        <img
+        <LazyLoadImage
           src={image}
-          alt=""
-          className=" object-cover"
-          style={{ height: "250px" }}
+          alt={name}
+          wrapperClassName="lazy-loader"
+          effect="blur"
         />
         <div className="card-body">
           <div className="card-footer flex justify-between">
