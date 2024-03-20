@@ -11,6 +11,9 @@ import Admin from "./pages/Admin/Admin";
 import CustomerList from "./pages/Admin/CustomerList/CustomerList";
 import AdminLayout from "./layout/AdminLayout";
 import AddCustomer from "./pages/Admin/CustomerList/AddCustomer";
+import ProductList from "./pages/Admin/ProductList/ProductList";
+import AddProduct from "./pages/Admin/ProductList/AddProduct";
+import OrderList from "./pages/Admin/OrderList/OrderList";
 
 function App() {
   // Define a higher-order function to check if the user is signed in
@@ -28,8 +31,11 @@ function App() {
         </Route>
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="/admin" element={<Admin />}></Route>
-          <Route path="/admin/customerList" element={<CustomerList />}></Route>
-          <Route path="/admin/add-customer" element={<AddCustomer />}></Route>
+          <Route path="/admin/customerList" element={<CustomerList />} />
+          <Route path="/admin/add-customer" element={<AddCustomer />} />
+          <Route path="/admin/orderList" element={<OrderList />} />
+          <Route path="/admin/productList" element={<ProductList />} />
+          <Route path="/admin/add-product" element={<AddProduct />} />
         </Route>
       </Routes>
     </>

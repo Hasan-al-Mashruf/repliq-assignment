@@ -4,15 +4,21 @@ import Signin from "./signin/Signin";
 import { Iinputs } from "../../interfaces/interfaces.site";
 import { useState } from "react";
 import SignUp from "./signin/signup";
+import { useNavigate } from "react-router-dom";
 
 const Authentication = () => {
+  const navigate = useNavigate();
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm<Iinputs>();
 
-  const onSubmit: SubmitHandler<Iinputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Iinputs> = (data) => {
+    // Save user data to localStorage
+    localStorage.setItem("userData", JSON.stringify(data));
+    navigate("/");
+  };
 
   const btnGroup = ["sign in", "sign up"];
   const [activeTabIndex, setActiveTabIndex] = useState(0);

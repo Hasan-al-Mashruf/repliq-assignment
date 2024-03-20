@@ -5,8 +5,10 @@ import { ICustomer, ProductType } from "../interfaces/interfaces.site";
 export type ProductStoreContextType = {
   loader: boolean;
   sampleProductData: ProductType[] | [];
-  cart: ProductType[] | null;
+  cart: ProductType[] | [];
+  orderList: ProductType[] | [];
   setCart: React.Dispatch<React.SetStateAction<ProductType[] | []>>;
+  setOrderList: React.Dispatch<React.SetStateAction<ProductType[] | []>>;
   customerList: ICustomer[] | [];
   setCustomerList: React.Dispatch<React.SetStateAction<ICustomer[] | []>>;
   setSampleProductData: React.Dispatch<
@@ -25,6 +27,7 @@ const ProductStoreProvider: React.FC<{ children: React.ReactNode }> = ({
     ProductType[] | []
   >([]);
   const [cart, setCart] = useState<ProductType[] | []>([]);
+  const [orderList, setOrderList] = useState<ProductType[] | []>([]);
   const [customerList, setCustomerList] = useState<ICustomer[] | []>([]);
 
   const productApi = process.env.REACT_APP_API_URL;
@@ -71,6 +74,8 @@ const ProductStoreProvider: React.FC<{ children: React.ReactNode }> = ({
         customerList,
         setCustomerList,
         setSampleProductData,
+        orderList,
+        setOrderList,
       }}
     >
       {children}

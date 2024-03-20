@@ -50,8 +50,11 @@ const ProductList = () => {
                   <td>{price}</td>
                   <td>{brand}</td>
                   <td>{quantity}</td>
-                  <td>
-                    <button onClick={() => handleDelete(id)}>Delete</button>
+                  <td
+                    onClick={() => handleDelete(id)}
+                    className="cursor-pointer"
+                  >
+                    Delete
                   </td>
                 </tr>
               );

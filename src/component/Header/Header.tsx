@@ -9,16 +9,16 @@ const Header = () => {
             <a className="navbar-item text-black">Ripple UI</a>
           </div>
           <div className="navbar-end">
-            <NavLink to="/" className="lg:p-4 p-2 relative">
+            <NavLink to="/" className="mx-1 p-2 relative">
               Home
             </NavLink>
-            <NavLink to="/product" className="lg:p-4 p-2 relative">
+            <NavLink to="/product" className="mx-1 p-2 relative">
               Product
             </NavLink>
-            <NavLink to="/cart" className="lg:p-4 p-2 relative">
+            <NavLink to="/cart" className="mx-1 p-2 relative">
               Cart
             </NavLink>
-            <NavLink to="/admin" className="lg:p-4 p-2 relative">
+            <NavLink to="/admin" className="mx-1 p-2 relative">
               Admin
             </NavLink>
           </div>
