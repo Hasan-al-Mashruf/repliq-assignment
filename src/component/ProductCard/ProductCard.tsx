@@ -20,8 +20,7 @@ const ProductCard: React.FC<{ product: ProductType }> = ({ product }) => {
   const addToCart = (product: ProductType) => {
     setCart((prevCart) => [...prevCart, product]);
   };
-  console.log(product);
-  console.log(cart, "cart");
+
   return (
     <div>
       <div className="card card-image-cover max-w-full">
@@ -41,10 +40,7 @@ const ProductCard: React.FC<{ product: ProductType }> = ({ product }) => {
           </p>
           <div className="flex justify-center gap-4 mt-5">
             <Link to={`/product/${id}`}>
-              <button
-                onClick={() => addToCart(product)}
-                className="btn btn-outline-primary border-orange-600 text-orange-600 bg-orange-600 text-white font-body px-8 hover:bg-transparent hover:text-orange-600 "
-              >
+              <button className="btn btn-outline-primary border-orange-600 text-orange-600 bg-orange-600 text-white font-body px-8 hover:bg-transparent hover:text-orange-600 ">
                 See Details
               </button>
             </Link>

@@ -26,7 +26,6 @@ const AddProduct = () => {
     });
 
     navigate("/admin/productList");
-    console.log(data);
   };
 
   return (

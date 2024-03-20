@@ -26,9 +26,9 @@ const AdminLayout = () => {
                 ></path>
               </svg>
               <div className="flex flex-col">
-                <span>Acme</span>
+                <span>Assignment</span>
                 <span className="text-xs font-normal text-content2">
-                  Team Plan
+                  Repliq Limited
                 </span>
               </div>
             </section>

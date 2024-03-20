@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container mx-auto">
         <nav className="navbar bg-gray text-black rounded-full my-5">
           <div className="navbar-start">
-            <a className="navbar-item text-black">Ripple UI</a>
+            <a className="navbar-item text-black">Logo</a>
           </div>
           <div className="navbar-end">
             <NavLink to="/" className="mx-1 p-2 relative">

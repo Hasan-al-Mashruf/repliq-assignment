@@ -42,7 +42,7 @@ const Authentication = () => {
                   index == activeTabIndex
                     ? "bg-orange-400 text-white"
                     : "bg-gray"
-                } btn capitalize px-10 bg-transparent rounded-md text-black font-body font-medium`}
+                } btn capitalize px-10 rounded-md text-black font-body font-medium`}
                 key={btn}
                 onClick={() => setActiveTabIndex(index)}
               >
